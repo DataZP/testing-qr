@@ -51,7 +51,7 @@ export class AppComponent {
     if (this.scanResult.length === 10) {
       this.scanResult = "Yep, it works!";
     } else {
-      this.router.navigate(['/'])
+      return "Doesn't work"
     }
   }
 
