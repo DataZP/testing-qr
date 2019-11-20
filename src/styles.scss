@@ -2,5 +2,7 @@
 
 
 body {
-    background-image: url("./assets/gradient.jpg");
+    background: url("./assets/gradient.jpg") no-repeat;
+    background-size: cover;
+    height: 1920px;
 }

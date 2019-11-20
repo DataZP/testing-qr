@@ -6,6 +6,19 @@ body {
   text-align:center;
 }
 
+.title {
+  height: 25px;
+  margin-top: 125px;
+  position: fixed;
+}
+
+.title > h1 {
+  font-size: 25px;
+  background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 19%, rgba(134,134,198,1) 76%, rgba(0,125,255,0.8827906162464986) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: cadetblue;
+}
+
 .container {
   height: 100%;
   display: flex;
@@ -13,6 +26,7 @@ body {
 }
 
 #qr-container {
+  border-radius: 10px;
   position: fixed;
   top: 50%;
   left: 50%;

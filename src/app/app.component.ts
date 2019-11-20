@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild} from '@angular/core';
 import { QrScannerComponent } from 'ang-qrscanner';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,9 @@ export class AppComponent {
   
   title = 'qr-project';
 
-  constructor() {}
+  constructor(
+    private router: Router,
+  ) {}
 
   scanResult: string;
 
@@ -51,7 +54,7 @@ export class AppComponent {
     if (this.scanResult.length === 10) {
       this.scanResult = "Yep, it works!";
     } else {
-      return "That should be illegal."
+      this.router.navigate(['/'])
     }
   }
 
