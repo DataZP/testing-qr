@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild} from '@angular/core';
 import { QrScannerComponent } from 'ang-qrscanner';
-import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -12,9 +11,7 @@ export class AppComponent {
   
   title = 'qr-project';
 
-  constructor(
-    private router: Router,
-  ) {}
+  constructor() {}
 
   scanResult: string;
 
